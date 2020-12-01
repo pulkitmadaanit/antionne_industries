@@ -75,7 +75,7 @@ DATABASES = {
     }
 }
 
-WHITENOISE_USE_FINDERS = True
+# WHITENOISE_USE_FINDERS = True
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -131,7 +131,7 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT_DIR, 'static'),
 )
 
-django_heroku.settings(locals() )
+# django_heroku.settings(locals() )
 # db_from_env = dj_database_url.config(conn_max_age=500)
 # DATABASES['default'].update(db_from_env)
 
