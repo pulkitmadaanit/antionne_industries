@@ -1,1 +1,1 @@
-web: gunicorn antioneindustries.wsgi --log-file -
+web: gunicorn AntioneIndustries.wsgi --log-file -
