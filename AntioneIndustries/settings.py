@@ -14,10 +14,10 @@ PROJECT_ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3*5%!aq!f!jdmc!2n48bq=hw4!&r@s5jlebdtbq-f8b@$4h&ay'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['antioneindustries.herokuapp.com', '127.0.0.1']
-# ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['antioneindustries.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 # https://antioneindustries.herokuapp.com/
 
 # Application definition

@@ -3262,10 +3262,10 @@ body{
 .contact-us .contact-us-form h2:before{
 	position:absolute;
 	content:"";
-	left:0;
+	/* left:0; */
 	bottom:0;
 	height:2px;
-	width:50px;
+	width:260px;
 	background:#1A76D1;
 }
 .contact-us .contact-us-form p {

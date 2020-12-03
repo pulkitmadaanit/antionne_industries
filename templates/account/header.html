@@ -47,25 +47,91 @@
 						<!-- Main Menu -->
 						<div class="main-menu">
 							<nav class="navigation">
+								
 								<ul class="nav menu">
-									<li class="active"><a href="#">Home <i class="icofont-rounded-down"></i></a>
-										<ul class="dropdown">
+									<li {% block nav_index%}{% endblock %}><a href="{% url 'home' %}">Home </a>
+										<!-- <ul class="dropdown">
 											<li><a href="index.html">Home Page 1</a></li>
+										</ul> -->
+									</li>    
+									<li {% block about %}{% endblock %}><a href="{% url 'about' %}">About us </a></li>
+									<!-- <li><a href="#">Contact </a></li> -->
+
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+									<!-- <li ><a href="#">Dealers <i class="icofont-rounded-down"></i></a>
+										<ul class="dropdown">
+										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Three Column <b class="caret"></b></a>
+											<ul class="dropdown-menu multi-column columns-3 col-lg-12">
+												<div class="row">
+													<div class="col-sm-4">
+														<ul class="multi-column-dropdown">
+															<li><a href="#">Action</a></li>
+															<li><a href="#">Another action</a></li>
+															<li><a href="#">Something else here</a></li>
+															<li class="divider"></li>
+															<li><a href="#">Separated link</a></li>
+															<li class="divider"></li>
+															<li><a href="#">One more separated link</a></li>
+														</ul>
+													</div>
+													<div class="col-sm-4">
+														<ul class="multi-column-dropdown">
+															<li><a href="#">Action</a></li>
+															<li><a href="#">Another action</a></li>
+															<li><a href="#">Something else here</a></li>
+															<li class="divider"></li>
+															<li><a href="#">Separated link</a></li>
+															<li class="divider"></li>
+															<li><a href="#">One more separated link</a></li>
+														</ul>
+													</div>
+													<div class="col-sm-4">
+														<ul class="multi-column-dropdown">
+															<li><a href="#">Action</a></li>
+															<li><a href="#">Another action</a></li>
+															<li><a href="#">Something else here</a></li>
+															<li class="divider"></li>
+															<li><a href="#">Separated link</a></li>
+															<li class="divider"></li>
+															<li><a href="#">One more separated link</a></li>
+														</ul>
+													</div>
+												</div>
+											</ul>
+										</li>
+											
+
+
+
+
+
+
+
+										</ul>
+									</li> -->
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+									<li><a href="#">Deals in <i class="icofont-rounded-down"></i></a>
+										<ul class="dropdown">
+											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
+											
 										</ul>
 									</li>
-									<li><a href="#">Doctos </a></li>
-									<li><a href="#">Services </a></li>
-									<li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
+
+
+									<li ><a href="#">Dealers <i class="icofont-rounded-down"></i></a>
 										<ul class="dropdown">
-											<li><a href="#">404 Error</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
-										<ul class="dropdown">
+											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
+											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
+											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
+											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
+											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
 											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
 										</ul>
 									</li>
-									<li><a href="contact.html">Contact Us</a></li>
+									<li {% block contact%}{% endblock %}><a href="{% url 'contact' %}">Contact Us</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -73,7 +139,7 @@
 					</div>
 					<div class="col-lg-2 col-12">
 						<div class="get-quote">
-							<a href="appointment.html" class="btn">Book Appointment</a>
+							<a href="#" class="btn">Book Appointment</a>
 						</div>
 					</div>
 				</div>
