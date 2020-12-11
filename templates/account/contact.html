@@ -10,7 +10,7 @@
             <div class="loader">
                 <div class="loader-outter"></div>
                 <div class="loader-inner"></div>
-
+															
                 <div class="indicator"> 
                     <svg width="16px" height="12px">
                         <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
@@ -40,7 +40,8 @@
 								<h2 class="text-center">Contact With Us</h2>
 								<p class="text-center">If you have any questions please fell free to contact with us.</p>
 								<!-- Form -->
-								<form class="form" method="post" action="mail/mail.php">
+								<form class="form" method="post">
+									{% csrf_token %}
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
@@ -54,7 +55,7 @@
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" name="phone" placeholder="Phone" required="">
+												<input type="tel" name="phone" placeholder="Phone"  required="">
 											</div>
 										</div>
 										<div class="col-lg-6">
@@ -69,7 +70,7 @@
 										</div>
 										<div class="col-12">
 											<div class="form-group login-btn">
-												<button class="btn" type="submit">Send</button>
+												<button class="btn" type="submit" >Send</button>
 											</div>
 											<!-- <div class="checkbox">
 												<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Do you want to subscribe our Newsletter ?</label>
@@ -89,8 +90,8 @@
 							<div class="single-info">
 								<i class="icofont icofont-ui-call"></i>
 								<div class="content">
-									<h3>+(000) 1234 56789</h3>
-									<p>info@company.com</p>
+									<h3>+(000) 99999-99999</h3>
+									<p>Antioneindustry@company.com</p>
 								</div>
 							</div>
 						</div>
