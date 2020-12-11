@@ -1,6 +1,6 @@
 from pathlib import Path
 import os
-import django_heroku
+# import django_heroku
 # import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -14,10 +14,10 @@ PROJECT_ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3*5%!aq!f!jdmc!2n48bq=hw4!&r@s5jlebdtbq-f8b@$4h&ay'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['antioneindustries.herokuapp.com', '127.0.0.1']
-# ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['antioneindustries.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
 # https://antioneindustries.herokuapp.com/
 
 # Application definition
@@ -30,7 +30,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #=============
+    # 'imagefit',  #
+    #=============
     'account',
+    'user_auth',
 
 ]
 
@@ -108,6 +112,15 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+# ---------------------------------------------------------------
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "sunilrajputdev@gmail.com"
+EMAIL_HOST_PASSWORD = "rajput@123"
+
+# ADMIN_USER_HOST = 'sunilrajputdev@gmail.com'
 
 
 # Static files (CSS, JavaScript, Images)
@@ -125,3 +138,9 @@ STATICFILES_DIRS = (
 # DATABASES['default'].update(db_from_env)
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+MEDIA_URL= '/media/'
+
+
+# MEDIA_ROOT=(BASE_DIR/'media')
+MEDIA_ROOT = os.path.join(PROJECT_ROOT_DIR, 'media')
