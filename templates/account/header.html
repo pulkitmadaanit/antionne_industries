@@ -7,14 +7,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-5 col-12">
-					<!-- Contact -->
-					<!-- <ul class="top-link">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Doctors</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">FAQ</a></li>
-					</ul> -->
-					<!-- End Contact -->
+					
 				</div>
 				<div class="col-lg-6 col-md-7 col-12">
 					<!-- Top Contact -->
@@ -56,69 +49,105 @@
 									</li>    
 									<li {% block about %}{% endblock %}><a href="{% url 'about' %}"> About us </a></li>
 
-
-														
-<!-- --------------------------------------------try--------------------------------------------- -->
-
+									<li ><a href="#">New bar </a>
 										
-									<!-- <li ><a href="#">Deals in <i class="icofont-rounded-down"></i></a>
-										<ul class="dropdown">
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
+									</li>
+									
+									<li>
+										<a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Products <i class="icofont-rounded-down"></i>
+											<!-- dropdown link<i class="fa fa-long-arrow-right"></i> -->
+										</a>
+										<ul class="dropdown-menu dropdown" aria-labelledby="navbarDropdownMenuLink">
+											  <li><a class="new dropdown-item dropdown-toggle " href="#" style="padding: 5px;">Productone ></a>
+
+												<ul class="dropdown-menu " style="top: 37px; left: 121.35px;">
+													<li><a class="new dropdown-item" href="{% url 'p1p1' %}" style="padding: 5px;">one</a></li>
+													<li><a class="new dropdown-item" href="{% url 'p1p2' %}" style="padding: 5px;">two</a></li>
+			
+			
+													<li><a class="dropdown-item " href="{% url 'p1p3' %}" style="padding: 5px;">three</a>
+														<!-- <ul class="dropdown-menu ">
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">three action aa</a></li>
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">Another three action</a></li>
+														</ul> -->
+													</li>
+													<li><a class="new dropdown-item " href="{% url 'p1p4' %}" style="padding: 5px;">four</a>
+														<!-- <ul class="dropdown-menu">
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">three action bb</a></li>
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">Another three action</a></li>
+														</ul> -->
+													</li>
+												</ul>
 											
-										</ul>
-									</li> -->
-									<!-- ============================================================================================================ -->
-									<li ><a href="#">New bar <i class="icofont-rounded-down"></i></a>
-										<ul class="dropdown">
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-											<li><a href="#">Blog Details <i class="icofont-rounded-down"></i></a>
-												<ul class="droprignt">
-													<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-													<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-													<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-													<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
+											</li> 
+
+
+
+											<li><a class="new dropdown-item dropdown-toggle" href="#" style="padding: 5px;">Producttwo ></a>
+												
+													
+												<ul class="dropdown-menu " style="top: 37px; left: 121.35px;">
+													<li><a class="new dropdown-item" href="{% url 'p2p1' %}" style="padding: 5px;">one </a></li>
+													<li><a class="new dropdown-item" href="{% url 'p2p2' %}" style="padding: 5px;">two</a></li>
+			
+			
+													<li><a class="dropdown-item " href="{% url 'p2p3' %}" style="padding: 5px;">three  </a>
+														<!-- <ul class="dropdown-menu ">
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">three action aa</a></li>
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">Another three action</a></li>
+														</ul> -->
+													</li>
+													<li><a class="new dropdown-item " href="{% url 'p2p4' %}" style="padding: 5px;">four</a>
+														<!-- <ul class="dropdown-menu">
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">three action bb</a></li>
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">Another three action</a></li>
+														</ul> -->
+													</li>
+												</ul>
+
+											
+											</li> 
+											<li><a class="dropdown-item dropdown-toggle" href="#" style="padding: 5px;">Productthree></a>
+												<ul class="dropdown-menu " style="top: 37px; left: 121.35px;">
+													<li><a class="new dropdown-item" href="{% url 'p3p1' %}" style="padding: 5px;">one</a></li>
+													<li><a class="new dropdown-item" href="{% url 'p3p2' %}" style="padding: 5px;">two</a></li>
+			
+			
+													<li><a class="dropdown-item " href="{% url 'p3p3' %}" style="padding: 5px;">three</a>
+														<!-- <ul class="dropdown-menu ">
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">three action aa</a></li>
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">Another three action</a></li>
+														</ul> -->
+													</li>
+													<li><a class="new dropdown-item " href="{% url 'p3p4' %}" style="padding: 5px;">four </a>
+														<!-- <ul class="dropdown-menu">
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">three action bb</a></li>
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">Another three action</a></li>
+														</ul> -->
+													</li>
 												</ul>
 											</li>
-											
-										</ul>
-									</li>
-									<!-- ============================================================================================================ -->
-<!-- ----------------------------------------------------------------copy code---------------------------------------------------------------- -->
-												<!-- <li class="drop-down"><a href="">Drop Down</a>
-													<ul>
-													<li><a href="#">Drop Down 1</a></li>
-													<li class="drop-down"><a href="#">Drop Down 2</a>
-														<ul>
-														<li><a href="#">Deep Drop Down 1</a></li>
-														<li><a href="#">Deep Drop Down 2</a></li>
-														<li><a href="#">Deep Drop Down 3</a></li>
-														<li><a href="#">Deep Drop Down 4</a></li>
-														<li><a href="#">Deep Drop Down 5</a></li>
-														</ul>
+											<li><a class="dropdown-item dropdown-toggle" href="#" style="padding: 5px;">productfour ></a>
+												<ul class="dropdown-menu" style="top: 37px; left: 121.35px;">
+													<li><a class="new dropdown-item" href="{% url 'p4p1' %}" style="padding: 5px;">one</a></li>
+													<li><a class="new dropdown-item" href="{% url 'p4p2' %}" style="padding: 5px;">two</a></li>
+			
+			
+													<li><a class="dropdown-item " href="{% url 'p4p3' %}" style="padding: 5px;">three</a>
+														<!-- <ul class="dropdown-menu">
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">three action 1 3</a></li>
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">Another three action 2 3</a></li>
+														</ul> -->
 													</li>
-													<li><a href="#">Drop Down 3</a></li>
-													<li><a href="#">Drop Down 4</a></li>
-													<li><a href="#">Drop Down 5</a></li>
-													</ul>
-												</li> -->
-
-
-
-
-
-<!-------------------------------------------copy code --------------------------------  -->
-
-									<li ><a href="#">Dealers <i class="icofont-rounded-down"></i></a>
-										<ul class="dropdown">
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
-											<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
+													<li><a class="dropdown-item " href="{% url 'p4p4' %}" style="padding: 5px;">four</a>
+														<!-- <ul class="dropdown-menu">
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">three action 3 </a></li>
+															<li><a class="new dropdown-item" href="#" style="padding: 5px;">Another three action 3</a></li>
+														</ul> -->
+													</li>
+												</ul>
+											</li>
 										</ul>
 									</li>
 									<li {% block contact%}{% endblock %}><a href="{% url 'contact' %}">Contact Us</a></li>
@@ -129,7 +158,7 @@
 					</div>
 					<div class="col-lg-2 col-12">
 						<div class="get-quote">
-							<a href="#" class="btn">Book Appointment</a>
+							<a href="#" class="btn">SEarch</a>
 						</div>
 					</div>
 				</div>

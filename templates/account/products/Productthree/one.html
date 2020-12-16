@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% include "account/header.html" %}
+  <h1>this is productthree product ONE</h1>
+
+  <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":200,"width":200,"zoom":17,"queryString":"Sector 74 A, Baliali, Punjab 140307, India","place_id":"ChIJZfWWMa7vDzkRHH6tUbBjQpk","satellite":false,"centerCoord":[30.719820340237955,76.67924748180431],"lang":"en","cityUrl":"/india/landran-345696","cityAnchorText":"Map of Landran, North Zone, India","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"327339"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=327339';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/map-embed">AntioneIndustries</a></div>  
+
+  {% include "account/footer.html" %}
+{% endblock content %}
