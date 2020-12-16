@@ -274,12 +274,12 @@ Version:	1.1
 		/*===================
 			Scroll Up JS
 		=====================*/
-		$.scrollUp({
-			scrollText: '<span><i class="fa fa-angle-up"></i></span>',
-			easingType: 'easeInOutExpo',
-			scrollSpeed: 900,
-			animation: 'fade'
-		}); 
+		// $.scrollUp({
+		// 	scrollText: '<span><i class="fa fa-angle-up"></i></span>',
+		// 	easingType: 'easeInOutExpo',
+		// 	scrollSpeed: 900,
+		// 	animation: 'fade'
+		// }); 
 
 		/*=======================
 			Animate Scroll JS

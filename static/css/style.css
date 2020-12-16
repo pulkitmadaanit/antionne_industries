@@ -74,9 +74,9 @@ body{
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
 }
-.pro-features.active{
+/* .pro-features.active{
 	right:0;
-}
+} */
 .pro-features li.big-title {
 	font-weight: 600;
 	color: #1A76D1;
@@ -113,7 +113,7 @@ body{
 	line-height: 45px;
 	font-size: 14px;
 	border-radius: 5px 0 0 5px;
-	background: #1A76D1;
+	/* background: #1A76D1; */
 	text-align: center;
 	color: #fff;
 	top: 0;
@@ -337,14 +337,27 @@ body{
 	display: inline-block;
 	position:relative;
 }
+/* hsdfjhdsafjhd */
+
+.new {
+    color: #2C2D3F;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+	/* padding: 25px 12px; */
+    position: relative;
+    display: inline-block;
+    position: relative;
+}
+
+/* hszdfjhsdfjhdsgfh */
 .header .nav li a::before {
 	position: absolute;
 	content: "";
 	left: 0;
 	bottom: 0;
-	height: 3px;
+	height: 0px;
 	width:0%;
-	background: #1A76D1;
 	border-radius: 5px 5px 0 0;
 	opacity:0;
 	visibility:hidden;

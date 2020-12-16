@@ -141,6 +141,9 @@ STATICFILES_DIRS = (
 
 MEDIA_URL= '/media/'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ed25623dc771bf5e0c84c3a5dc393f168f990fd5
 # MEDIA_ROOT=(BASE_DIR/'media')
 MEDIA_ROOT = os.path.join(PROJECT_ROOT_DIR, 'media')
